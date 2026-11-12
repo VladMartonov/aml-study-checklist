@@ -17,7 +17,16 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen font-sans antialiased">{children}</body>
+      <body className="flex min-h-screen flex-col font-sans antialiased">
+        <div className="flex-1">{children}</div>
+        <footer className="bg-navy-900 text-slate-300">
+          <div className="mx-auto w-full max-w-2xl px-4 py-5 text-center text-sm sm:px-6">
+            <p className="break-words">
+              © 2026 AML Certification Centre. Built with Claude Code
+            </p>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
