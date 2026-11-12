@@ -11,9 +11,16 @@ A small, responsive web app that helps AML Certification Centre learners keep tr
 - **Progress** counter ("3 of 5 tasks completed") with a progress bar.
 - Loading, saving and error states; the typed task is kept if saving fails.
 
-## Shared demo behaviour
+## How to use
 
-This is a **shared demonstration checklist**. There are no user accounts: everyone who opens the app sees and edits the same tasks. The page refreshes the list from the server every 10 seconds (and when you return to the tab), so changes made on another device appear automatically. The database starts empty; no example tasks are created.
+1. **Add a study task.** Type a title in the **New study task** field and select **Add task** (or press Enter). The task appears at the top of the list and the field clears, ready for the next one.
+2. **Mark a task complete.** Tick the checkbox next to the task. Its title is struck through. To **reopen** it, untick the checkbox.
+3. **Delete a task.** Select the bin icon on the right of the task. Your browser asks you to confirm; choose **OK** to delete it permanently or **Cancel** to keep it. Deletion cannot be undone.
+4. **Track your progress.** Above the list, the counter shows how many tasks are done (for example, "3 of 5 tasks completed"), and the progress bar fills in proportion to the completed share.
+
+### Shared demo behaviour
+
+This is a **shared demonstration checklist**. There are no user accounts: everyone who opens the app sees and edits the same tasks, so anything you add, complete or delete changes the list for all visitors. The page refreshes the list from the server every 10 seconds (and when you return to the tab), so changes made on another device appear automatically. The database starts empty; no example tasks are created.
 
 ## Tech stack
 
